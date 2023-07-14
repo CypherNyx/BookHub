@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <title>Document</title>
+  <title>BookHub</title>
 </head>
 <body>
+  <!-- This is the code for the navbar/hero -->
   <nav>
     <section class="hero is-info is-small">
       <div class="hero-head">
@@ -23,6 +24,7 @@
                 <span></span>
               </span>
             </div>
+            <!-- the navbar buttons are here -->
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
                 <a class="navbar-item is-active">
@@ -54,15 +56,40 @@
   </nav>
   <br>
   <br>
-  <div class="container has-text-centered">
+  <!-- This is the code for the description element -->
+  <div class="container is-max-desktop has-text-centered">
     <div class="notification is-info">
       <strong> Welcome to BookHub!</strong> 
       <br>
       Our goal is to get you to stop binging and start reading!
       <br>
       Below is a quiz that will take in your favorite movies or shows and recommend a book!
+  
     </div>
   </div>
+  <br>
+  <br>
+  <!-- this is the question text -->
+  <h1 class="title has-text-centered has-text-info">Which one are you?</h1>
+  <!-- these are the show and movie buttons -->
+  <div class="columns is-mobile">
+    <div class="column"></div>
+  <button class="button is-medium is-info is-rounded">Show Binger</button>
+  <button class="button is-medium is-info is-rounded">Movie Fanatic</button>
+  <div class="column"></div>
+</div>
+<br>
+<!-- this is the bottom navbar that will only appear on mobile  -->
+<br>
+<div class="container is-max-widescreen has-text-centered">
+  <div class="notification is-info">
+<!-- these are the bottom navbar buttons -->
+<button class="button is-small is-info is-light">Explore Books</button>
+<button class="button is-small is-info is-light">My Bookshelf</button>
+<button class="button is-small is-info is-light">Best Sellers</button>
+  </div>
+</div>
+
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
