@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <title>BookHub</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-              
+                <h2 class="is-size-3"><strong>BookHub</strong></h2>
               </a>
               <span class="navbar-burger" data-target="navbarMenuHeroA">
                 <span></span>
@@ -44,75 +44,70 @@
           </div>
         </nav>
       </div>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">
-            BookHub
-          </p>
-        </div>
-      </div>
-      <br>
     </section>
   </nav>
-  <br>
-  <br>
-  <!-- This is the code for the description element -->
+  <section class="section">
+    <div class="container">
+  <!-- This is the code for the pick your favorite section -->
   <div class="container is-max-desktop has-text-centered">
     <div class="notification is-info">
-      <strong>Question text?</strong> 
+      <strong class="is-size-4">Which is your favorite?</strong> 
       <br>
-      Our goal is to get you to stop binging and start reading!
+      Click on your favorite film or show below, you can also select none. Once you've made your pick, click next!
       <br>
-      Below is a quiz that will take in your favorite movies or shows and recommend a book!
   
     </div>
   </div>
   <br>
   <br>
-  <!-- this is the question text -->
-  <h1 class="title has-text-centered has-text-info">Which one are you?</h1>
   <!-- these are the show and movie buttons -->
-  <div class="columns is-mobile">
-    <div class="column"></div>
-  <button class="button is-medium is-info is-rounded showBinger">Show Binger</button>
-  <button class="button is-medium is-info is-rounded movieFan">Movie Fanatic</button>
-  <div class="column"></div>
-</div>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box has-text-centered">
+        <p class="title">Title</p>
+        <img src="../images/thewitchersmall.jpg">
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box has-text-centered">
+        <p class="title">Title</p>
+        <img src="../images/thewitchersmall.jpg">
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box has-text-centered">
+        <p class="title">Title</p>
+        <img src="../images/thewitchersmall.jpg">
+        </div>
+      </article>
+    </div>
+  </div>
 <br>
-<br>
-<!-- this is the example container -->
-<div class="container is-max-desktop">
-  <div class="notification is-info is-light">
-    <div class="columns">
-      <div class="column is-one-quarter">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Watched this?
-        </p>
-      </header>
-      <img src="./assets/images/strangerthings.png" alt="Stranger Things Cover Art"></img>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child box has-text-centered">
+      <p class="title">Title</p>
+      <img src="../images/thewitchersmall.jpg">
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box has-text-centered">
+      <p class="title">Title</p>
+      <img src="../images/thewitchersmall.jpg">
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child box has-text-centered">
+      <p class="title">Title</p>
+      <img src="../images/thewitchersmall.jpg">
       </div>
+    </article>
+    
   </div>
-  <div class="column is-half">
-    <br>
-    <br>
-    <img src="./assets/images/then.png" alt="arrow pointing to the right"></img>
+  <div class="columns has-text-centered">
+    <div class="column is-full"><button class="button is-info is-rounded is-centered">Next</button></div>
   </div>
-  <div class="column is-one-quarter">
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        Read this!
-      </p>
-    </header>
-    <img src="./assets/images/hazelwood.jpeg" alt="Stranger Things Cover Art"></img>
-  </div>
-</div>
-  </div>
-  </div>
-  </div>
-
+<br>
 <br>
 <!-- this is the bottom navbar that will only appear on mobile  -->
 <br>
@@ -124,7 +119,8 @@
 <button class="button is-small is-info is-light fBestSellers">Best Sellers</button>
   </div>
 </div>
-
+    </div>
+    </section>
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="../js/script.js"></script>
 </html>
