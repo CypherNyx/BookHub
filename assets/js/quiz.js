@@ -13,23 +13,23 @@
     var questions = [
         {
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
-            answerOptions:  "",
+            answerOptions:  ["The Withcer", "American Horror Story", "The Good Place", "Lost", "Brigerton"]
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
-            answerOptions: "",
+            answerOptions: ""
         },
         {
             questionText: "Which of these shows would you always recommend to a friend?",
-            answerOptions: "",
+            answerOptions: ""
         },
         {
             questionText: "Which of these shows would you recommend to a complete stranger?",
-            answerOptions: "",
+            answerOptions: ""
         },
         {
             questionText: "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
-            answerOptions: "",
+            answerOptions: ""
         }
     ];
     
@@ -109,6 +109,12 @@
     ]
     
         // Select choices buttons with querySelector and function event to direct to next question
+    var choice1 = document.getElementById("choice-1")
+    var choice1 = document.getElementById("choice-2")
+    var choice1 = document.getElementById("choice-3")
+    var choice1 = document.getElementById("choice-4")
+    var choice1 = document.getElementById("choice-5")
+    var none = document.getElementById("none-of-these")
         // Function to display questions and choices
             // Next button click event (if else statement to make sure they've selected something)
         // Math.random to return 5 ISBN options to the results page
