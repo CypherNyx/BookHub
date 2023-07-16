@@ -1,34 +1,35 @@
 // Quiz page Variables
     // Variables for API Keys - GoogleBook API and TMBD
     var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
-    // Dahlia to add tmbdKey
-    var tmdbKey = "";
+
+    var tmdbKey = "&api_key=1866aca8e0c0dfcbef153230d45d9a50";
     
-    var 
+    // Variable for API URLs
+
         // Questions: array with objects in it that include questions and choices
         // Empty array to push book ISBN based on selected shows
     var userResults = [];
         // Answers array with show IDs
     var questions [
         {
-            questionText = "";
-            answerOptions =  "";
-        }
+            questionText = "Let's say you were having a really awful day, which of these shows would you watch?",
+            answerOptions =  "",
+        },
         {
-            questionText = "";
-            answerOptions = "";
-        }
+            questionText = "If you were bored and had nothing to do, which show would you go to first?",
+            answerOptions = "",
+        },
         {
-            questionText = "";
-            answerOptions = "";
-        }
+            questionText = "Which of these shows would you always recommend to a friend?",
+            answerOptions = "",
+        },
         {
-            questionText = "";
-            answerOptions = "";
-        }
+            questionText = "Which of these shows would you recommend to a complete stranger?",
+            answerOptions = "",
+        },
         {
-            questionText = "";
-            answerOptions = "";
+            questionText = "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
+            answerOptions = "",
         }
     ]
     
