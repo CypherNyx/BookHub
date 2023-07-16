@@ -5,5 +5,10 @@
 // Start Quiz button (for both show and movies - focus on shows for now)
 var startShowBtn = document.querySelector(".showBinger");
 var startMovieBtn = document.querySelector(".movieFan");
+var navHomeBtn = document.getElementById("homeBtn");
+var navExploreBtn = document.getElementById("explore");
+var navBookshelfBtn = document.getElementById("bookshelf");
+var navBestSellersBtn = document.getElementById("bestSellers");
 
-// add event listener to direct to quiz page - Dahlia
+// add event listener for navbar - DG
+
