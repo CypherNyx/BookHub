@@ -15,7 +15,7 @@ navHomeBtn.addEventListener('click', () => {
     if (window.location.href.endsWith('index.html')) {
     window.location.href ='index.html';
     } else {
-        window.location.href = window.location.origin + '/index.html';
+        window.location.href = window.location.origin + '../index.html';
           
     }
 });
