@@ -10,5 +10,19 @@ var navExploreBtn = document.getElementById("explore");
 var navBookshelfBtn = document.getElementById("bookshelf");
 var navBestSellersBtn = document.getElementById("bestSellers");
 
-// add event listener for navbar - DG
+// Event listeners for navbar - DG
+navHomeBtn.addEventListener('click', () => {
+    window.location.replace('index.html');
+});
+
+navExploreBtn.addEventListener('click', () => {
+    window.location.replace('./assets/pages/explore.html');
+});
+navBookshelfBtn.addEventListener('click', () => {
+    window.location.replace('./assets/pages/bookshelf.html');
+});
+//Best sellers page is still a MAYBE for now?
+navBestSellersBtn.addEventListener('click', () => {
+    window.location.replace('./assets/pages/explore.html');
+});
 
