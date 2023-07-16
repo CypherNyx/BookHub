@@ -1,5 +1,5 @@
 // Index Homepage: Variables
-// Possible make variables for the navigation bar to redirect?
+// Possible make variables for the navigation bar to redirect? - Dahlia
     // Start Quiz button (for both show and movies - focus on shows for now)
 var startShowBtn = document.querySelector(".showBinger");
 var startMovieBtn = document.querySelector(".movieFan");
@@ -9,7 +9,7 @@ var startMovieBtn = document.querySelector(".movieFan");
 // Quiz page Variables
     // Variables for API Keys - GoogleBook API and TMBD
 var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
-var imdbKey = "";
+var tmdbKey = "";
     // Questions: array with objects in it that include questions and choices
     // Empty array to push book ISBN based on selected shows
 var userResults = [];
@@ -21,19 +21,19 @@ var questions [
     }
     {
         questionText = "";
-        answerOptions =  "";
+        answerOptions = "";
     }
     {
         questionText = "";
-        answerOptions =  "";
+        answerOptions = "";
     }
     {
         questionText = "";
-        answerOptions =  "";
+        answerOptions = "";
     }
     {
         questionText = "";
-        answerOptions =  "";
+        answerOptions = "";
     }
 ]
 
@@ -43,12 +43,14 @@ var bookGroups = [
     {
         // The Witcher
         group: 1,
+        title: "The Witcher",
         showID: "tt5180504",
         bookIDs: ["9780316438988", "9781649374172", "9780316212298", "9780062564566", "9780316246279"]
     }
     {
         // LOTR: The Rings of Power
         group: 2,
+        title: "Lord of the Rings: The Rings of Power",
         showID: "tt7631058",
         bookIDs: ["9780007264896", "9780008376062", "9780593237649", "9781423136149", "9780547851396"]
     }
