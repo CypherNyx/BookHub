@@ -120,7 +120,13 @@ var none = document.getElementById("none-of-these");
 var nextQuestion = document.getElementById("next-btn");
         
 // Function to display questions and choices
-    
+function loadQuestion() {
+    var quizQuest = document.getElementById("quiz-question")
+    var quizChoices = document.getElementById("")
+
+
+
+}
         // Create function event to direct to next question
             // Next button click event (if else statement to make sure they've selected something)
         // Push book IDs into empty array based on option selected
