@@ -10,19 +10,36 @@ var navExploreBtn = document.getElementById("explore");
 var navBookshelfBtn = document.getElementById("bookshelf");
 var navBestSellersBtn = document.getElementById("bestSellers");
 
-// Event listeners for navbar - DG
+// Event listeners for Home navbar - DG
 navHomeBtn.addEventListener('click', () => {
+    if (window.location.pathname === '/index.html') {
     window.location.replace('index.html');
+    } else {
+        window.location.replace('index.html');
+    }
 });
 
 navExploreBtn.addEventListener('click', () => {
+    if (window.location.pathname === '/index.html') {
     window.location.replace('./assets/pages/explore.html');
+    } else {
+        window.location.replace('explore.html');
+    }
 });
 navBookshelfBtn.addEventListener('click', () => {
+    if (window.location.pathname === '/index.html') {
     window.location.replace('./assets/pages/bookshelf.html');
+} else {
+    window.location.replace('bookshelf.html');
+}
 });
 //Best sellers page is still a MAYBE for now?
 navBestSellersBtn.addEventListener('click', () => {
-    window.location.replace('./assets/pages/explore.html');
+    
+    if (window.location.pathname === '/index.html') {
+        window.location.replace('./assets/pages/quiz.html');
+        } else {
+            window.location.replace('quiz.html');
+        }
 });
 
