@@ -12,34 +12,36 @@ var navBestSellersBtn = document.getElementById("bestSellers");
 
 // Event listeners for Home navbar - DG
 navHomeBtn.addEventListener('click', () => {
-    if (window.location.pathname === '/index.html') {
-    window.location.replace('index.html');
+    if (window.location.href.endsWith('index.html')) {
+    window.location.href ='index.html';
     } else {
-        window.location.replace('index.html');
+        window.location.href = window.location.origin + '/index.html';
+          
     }
 });
 
 navExploreBtn.addEventListener('click', () => {
-    if (window.location.pathname === '/index.html') {
-    window.location.replace('./assets/pages/explore.html');
+    if (window.location.href.endsWith('index.html')) {
+    window.location.href ='./assets/pages/explore.html';
     } else {
-        window.location.replace('explore.html');
+        window.location.href ='explore.html';
     }
 });
 navBookshelfBtn.addEventListener('click', () => {
-    if (window.location.pathname === '/index.html') {
-    window.location.replace('./assets/pages/bookshelf.html');
+    if (window.location.href.endsWith('index.html')) {
+    window.location.href ='./assets/pages/bookshelf.html';
 } else {
-    window.location.replace('bookshelf.html');
+    window.location.href ='bookshelf.html';
 }
 });
 //Best sellers page is still a MAYBE for now?
 navBestSellersBtn.addEventListener('click', () => {
     
-    if (window.location.pathname === '/index.html') {
-        window.location.replace('./assets/pages/quiz.html');
+    if (window.location.href.endsWith('index.html')) {
+        window.location.href ='./assets/pages/quiz.html';
         } else {
-            window.location.replace('quiz.html');
+            window.location.href ='quiz.html';
         }
 });
+
 
