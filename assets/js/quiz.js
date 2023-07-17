@@ -13,23 +13,23 @@
     var questions = [
         {
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
-            answerOptions:  []
+            showOptions:  ["tt5180504", "tt7631058", "tt2707408", "tt8740790"], "tt4955642"
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
-            answerOptions: []
+            showOptions: []
         },
         {
             questionText: "Which of these shows would you always recommend to a friend?",
-            answerOptions: []
+          showOptions: []
         },
         {
             questionText: "Which of these shows would you recommend to a complete stranger?",
-            answerOptions: []
+            showOptions: []
         },
         {
             questionText: "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
-            answerOptions: []
+            showOptions: []
         }
     ];
     
@@ -127,19 +127,25 @@ function loadQuestion() {
     // var quizChoices = document.getElementById("")
 
     
-    // for (var i = 0; i < questions.answerOptions.length; i++) {
-    //     var showInfo = {
-    //         fetchInfo: function (question.answerOptions[i]) {
-    //             fetch ('https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
-    //             )
-    //             .then((response) => response.json())
-    //             .then((data) => this.displayshowInfo)
-    //         }
+    for (var i = 0; i < questions.showOptions.length; i++) {
+        var showInfo = {
+            fetchInfo: function (question.showOptions[i]) {
+                fetch ('https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
+                )
+                .then((response) => response.json())
+                .then((data) => this.displayshowInfo(data))
+            }
+            displayshowInfo: function (data) {
+                const { original_name, poster_path } = data.tv_results[0];
+              //   console.log(data);
+              //   console.log(poster_path);
+                featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
+                document.getElementById('title').innerHTML = original_name;
     
-    //     }
+        }
         
 
-    // }
+    }
 
 
 }
