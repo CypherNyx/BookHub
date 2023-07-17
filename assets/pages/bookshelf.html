@@ -1,2 +1,134 @@
+<<<<<<< HEAD
 <!--Added this text to test nav links. REMOVE if needed - DG -->
 <h1>This is the Bookshef Page</h1>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <title>My Bookshelf</title>
+</head>
+
+<body>
+  <!-- This is the code for the navbar/hero -->
+  <nav>
+    <section class="hero is-info is-small">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <h2 class="is-size-3" id="homeBtn"><strong>BookHub</strong></h2>
+              </a>
+              <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <!-- the navbar buttons are here -->
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item" id="explore">
+                  Explore Books
+                </a>
+                <a class="navbar-item" id="bookshelf">
+                  My Bookshelf
+                </a>
+                <a class="navbar-item" id="bestSellers">
+                  Best Sellers
+                </a>
+
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <!-- This is the code for "your bookshelf" section" -->
+      <div class="container is-max-desktop has-text-centered">
+        <div class="notification is-info">
+          <strong class="is-size-4" id="quiz-question">Your bookshelf</strong>
+          <br>
+          Here are your books that you've saved.
+          <br>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- these are the book tiles -->
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box has-text-centered" id="choice-1">
+            <p class="title">Title</p>
+            <img src="../images/thewitchersmall.jpg">
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box has-text-centered" id="choice-2">
+            <p class="title">Title</p>
+            <img src="../images/thewitchersmall.jpg">
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box has-text-centered" id="choice-3">
+            <p class="title">Title</p>
+            <img src="../images/thewitchersmall.jpg">
+        </div>
+        </article>
+      </div>
+    </div>
+    <br>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered" id="choice-4">
+          <p class="title">Title</p>
+          <img src="../images/thewitchersmall.jpg">
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered" id="choice-5">
+          <p class="title">Title</p>
+          <img src="../images/thewitchersmall.jpg">
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box has-text-centered" id="none-of-these">
+          <p class="title">Title</p>
+          <img src="../images/thewitchersmall.jpg">
+      </div>
+      </article>
+    </div>
+    <div class="columns has-text-centered">
+      <div class="column is-full"><button class="button is-info is-rounded is-centered" id="next-btn">Next</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- this is the bottom navbar that will only appear on mobile  -->
+    <br>
+    <div class="container is-max-widescreen has-text-centered">
+      <div class="notification is-info">
+        <!-- these are the bottom navbar buttons -->
+        <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
+        <button class="button is-small is-info is-light" id="fBookshelf">My Bookshelf</button>
+        <button class="button is-small is-info is-light" id="fBestSellers">Best Sellers</button>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+<script src="../js/script.js"></script>
+
+</html>
+>>>>>>> 17d7328e8825126f1483358262c7eb83d58c2035
