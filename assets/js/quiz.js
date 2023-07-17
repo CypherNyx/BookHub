@@ -26,7 +26,7 @@
         {
             questionText: "Which of these shows would you always recommend to a friend?",
             showOptions: ['tt2707408','tt4158110', 'tt2560140', 'tt8577458', 'tt6548228']
-            // Narcos, Mr. Robot, Attack on Titan, High Fedlity, Castle Rock
+            // Narcos, Mr. Robot, Attack on Titan, High Fidelity, Castle Rock
         },
         {
             questionText: "Which of these shows would you recommend to a complete stranger?",
