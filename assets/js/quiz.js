@@ -13,7 +13,7 @@
     var questions = [
         {
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
-            showOptions:  ["tt5180504", "tt7631058", "tt2707408", "tt8740790"], "tt4955642"
+            showOptions:  [], 
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
@@ -109,46 +109,20 @@
     ];
     
 // Select choices buttons with querySelector
-var choice1 = document.getElementById("choice-1");
-var choice1 = document.getElementById("choice-2");
-var choice1 = document.getElementById("choice-3");
-var choice1 = document.getElementById("choice-4");
-var choice1 = document.getElementById("choice-5");
-var none = document.getElementById("none-of-these");
+// var choice1 = document.getElementById("choice-1");
+// var choice2 = document.getElementById("choice-2");
+// var choice3 = document.getElementById("choice-3");
+// var choice4 = document.getElementById("choice-4");
+// var choice5 = document.getElementById("choice-5");
+// var none = document.getElementById("none-of-these");
+
+var choiceArray = ["choice-1", "choice-2", "choice-3", ""]
 
 // Variable for next button
 var nextQuestion = document.getElementById("next-btn");
         
 // Function to display questions and choices
-function loadQuestion() {
-    var quizQuest = document.getElementById("quiz-question")
-    quizQuest.textContent = questions.questionText
 
-    // var quizChoices = document.getElementById("")
-
-    
-    for (var i = 0; i < questions.showOptions.length; i++) {
-        var showInfo = {
-            fetchInfo: function (question.showOptions[i]) {
-                fetch ('https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
-                )
-                .then((response) => response.json())
-                .then((data) => this.displayshowInfo(data))
-            }
-            displayshowInfo: function (data) {
-                const { original_name, poster_path } = data.tv_results[0];
-              //   console.log(data);
-              //   console.log(poster_path);
-                featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
-                document.getElementById('title').innerHTML = original_name;
-    
-        }
-        
-
-    }
-
-
-}
 
 // Create function event to direct to next question
 
