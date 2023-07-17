@@ -227,6 +227,10 @@
         quizShowContent.innerHTML ='';
         var noneBtn = document.createElement("button");
         noneBtn.innerHTML = "None of These";
+        quizShowContent.appendChild(noneBtn);
+        noneBtn.addEventListener("click", function(){
+            nextQuestion();
+        });
         
 
         for ( var i = 0; i < 5; i++) {
@@ -274,7 +278,7 @@
 
 
     }
-    quizShowContent.appendChild(noneBtn);
+    
 
     };
 
