@@ -19,19 +19,19 @@
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
-            answerOptions: ['tt7631058', 'tt0844441','tt1844624', 'tt0411008', 'tt4158110' ]
+            showOptions: ['tt7631058', 'tt0844441','tt1844624', 'tt0411008', 'tt4158110' ]
         },
         /*{
             questionText: "Which of these shows would you always recommend to a friend?",
-            answerOptions: []
+            showOptions: []
         },
         {
             questionText: "Which of these shows would you recommend to a complete stranger?",
-            answerOptions: []
+            showOptions: []
         },
         {
             questionText: "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
-            answerOptions: []
+            showOptions: []
         }*/
     ];
     
