@@ -110,10 +110,9 @@ var showInfo = {
     },
     
     displayshowInfo: function (data) {
-      //const { name } = data.tv_results;
-      const { original_name, media_type, overview, poster_path } = data.tv_results[0];
-      console.log(data);
-      console.log(poster_path);
+      const { original_name, poster_path } = data.tv_results[0];
+    //   console.log(data);
+    //   console.log(poster_path);
       featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
       document.getElementById('showTitle').innerHTML = original_name;
             
@@ -124,12 +123,17 @@ var showInfo = {
     fetchInfo: function (book) {
         fetch(
             'https://www.googleapis.com/books/v1/volumes?q=isbn:'+ book +'&key=' + googleBooksKey
-
         )
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => this.displayBookInfo(data));
     },
-  }
+
+    displayBookInfo: function (data) {
+        const { title, imageLinks, authors } = data.items[0].volumeInfo;
+        featuredBOOK.src=imageLinks.thumbnail;
+        document.getElementById('bookTitle').innerHTML = `${title} \nby ${authors[0]}`;
+        },
+  };
 
   showInfo.fetchInfo("tt4574334");
   bookInfo.fetchInfo("9781250147936");
