@@ -10,13 +10,12 @@ var navExploreBtn = document.getElementById("explore");
 var navBookshelfBtn = document.getElementById("bookshelf");
 var navBestSellersBtn = document.getElementById("bestSellers");
 
-// Event listeners for Home navbar - DG
+// Event listeners for Main navbar - DG
 navHomeBtn.addEventListener('click', () => {
     if (window.location.href.endsWith('index.html')) {
     window.location.href ='index.html';
     } else {
         window.location.href = '../../index.html';
-                  
     }
 });
 
@@ -34,7 +33,7 @@ navBookshelfBtn.addEventListener('click', () => {
     window.location.href ='bookshelf.html';
 }
 });
-//Best sellers page is still a MAYBE for now?
+// TODO: Replace link -Best sellers page is still a MAYBE for now?
 navBestSellersBtn.addEventListener('click', () => {
     
     if (window.location.href.endsWith('index.html')) {
@@ -44,4 +43,15 @@ navBestSellersBtn.addEventListener('click', () => {
         }
 });
 
+
+// make quiz buttons clickable
+
+startShowBtn.addEventListener('click', ()=> {
+    window.location.href ='./assets/pages/quiz.html';
+});
+
+//TODO: Replace link for movies quiz when / if ready
+startMovieBtn.addEventListener('click', ()=> {
+    window.location.href ='./assets/pages/quiz.html';
+});
 
