@@ -149,7 +149,7 @@
                         selectedShows.push(id)
                         localStorage.setItem("Show ID", JSON.stringify(selectedShows))
                         // console.log(selectedShows)
-                        // nextQuestion();
+                        nextQuestion();
                     })
 
         
@@ -168,17 +168,17 @@
 
     };
 
-    // function nextQuestion() {
-    //     if (questionIndex < questionIndex.length -1) {
-    //         questionIndex++;
-    //         newQuestion();
-    //     } else {
-    //         endQuiz();
-    //     }
-    // }
+    function nextQuestion() {
+        if (questionIndex < questions.length -1) {
+            questionIndex++;
+            newQuestion();
+        } else {
+            endQuiz();
+        }
+    }
 
-    // function endQuiz () {
-    //     // Function to redirect to results page
-    // }
+    function endQuiz () {
+        // Function to redirect to results page
+    }
 
     newQuestion();
