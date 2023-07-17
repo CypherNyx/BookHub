@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   <title>BookHub</title>
 </head>
+
 <body>
   <!-- This is the code for the navbar/hero -->
   <nav>
     <section class="hero is-info is-small">
       <div class="hero-head">
-        <nav class="navbar mainNavCustom" >
+        <nav class="navbar mainNavCustom">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-              <h2 class="is-size-3"><strong>BookHub</strong></h2>
+                <h2 class="is-size-3" id="homeBtn"><strong>BookHub</strong></h2>
               </a>
               <span class="navbar-burger" data-target="navbarMenuHeroA">
                 <span></span>
@@ -36,8 +38,8 @@
                 <a class="navbar-item" id="bestSellers">
                   Best Sellers
                 </a>
-            
-                  </a>
+
+                </a>
                 </span>
               </div>
             </div>
@@ -50,18 +52,19 @@
           <br>
           <br>
           <p>
-            <strong class="is-size-1">Welcome to BookHub!</strong></p>
-            <p class="is-size-4">
+            <strong class="is-size-1">Welcome to BookHub!</strong>
+          </p>
+          <p class="is-size-4">
             Our goal is to get you to stop binging and start reading!
             <br>
-            Below is a quiz that will take in your favorite movies or shows and recommend a book!      
+            Below is a quiz that will take in your favorite movies or shows and recommend a book!
           </p>
-            
+
         </div>
         <div class="container has-text-right">
           <img src="./assets/images/girlReading3.png">
-      </div>
-      <br>
+        </div>
+        <br>
     </section>
   </nav>
   <br>
@@ -72,75 +75,80 @@
       <br>
       <br>
       <!-- this is the question text -->
-  <h1 class="title has-text-centered has-text-white">Which one are you?</h1>
-  <br>
-  <!-- these are the show and movie buttons -->
-  <div class="columns ">
-    <div class="column"></div>
-  <button class="button is-medium is-white is-rounded showBinger">Show Binger</button>
-  <div class="column is-1"></div>
-  <button class="button is-medium is-white is-rounded movieFan">Movie Fanatic</button>
-  <div class="column"></div>
-</div>
-<br>
-<br>
-  
+      <h1 class="title has-text-centered has-text-white">Which one are you?</h1>
+      <br>
+      <!-- these are the show and movie buttons -->
+      <div class="columns ">
+        <div class="column"></div>
+        <button class="button is-medium is-white is-rounded showBinger">Show Binger</button>
+        <div class="column is-1"></div>
+        <button class="button is-medium is-white is-rounded movieFan">Movie Fanatic</button>
+        <div class="column"></div>
+      </div>
+      <br>
+      <br>
+
     </div>
 
   </div>
   <br>
   <br>
 
-<br>
-<br>
-<!-- this is the example container -->
-<div class="container is-max-desktop">
-  <div class="notification is-info is-light">
-    <div class="columns">
-      <div class="column is-one-quarter">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title">
-          Binged this?
-        </p>
-      </header>
-      <img src="./assets/images/strangerthings.png" alt="Stranger Things Cover Art"></img>
+  <br>
+  <br>
+  <!-- this is the example container -->
+  <div class="container is-max-desktop">
+    <div class="notification is-info is-light">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Binged this?
+              </p>
+            </header>
+            <img class="card-image" id="FeaturedSHOWImg" src="" alt=""></img>
+            <div class="card-content has-text-centered is-size-5" id="showTitle"></div>
+          </div>
+        </div>
+        <div class="column is-half has-text-centered">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="./assets/images/then2.png" alt="arrow pointing to the right"></img>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Read this!
+              </p>
+            </header>
+            <img class="card-image" id="FeaturedBOOKImg" src="" style="width: 342px;"></img>
+            <div class="card-content has-text-centered is-size-6" id="bookTitle"></div>
+
+
+          </div>
+        </div>
       </div>
-  </div>
-  <div class="column is-half has-text-centered">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="./assets/images/then2.png" alt="arrow pointing to the right"></img>
-  </div>
-  <div class="column is-one-quarter">
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        Read this!
-      </p>
-    </header>
-    <img src="./assets/images/hazelwood.jpeg" alt="Stranger Things Cover Art"></img>
-  </div>
-</div>
-  </div>
-  </div>
+    </div>
   </div>
 
-<br>
-<!-- this is the bottom navbar that will only appear on mobile  -->
-<br>
-<div class="container is-max-widescreen has-text-centered">
-  <div class="notification is-info">
-<!-- these are the bottom navbar buttons -->
-<button class="button is-small is-info is-light fExplore">Explore Books</button>
-<button class="button is-small is-info is-light fBookshelf">My Bookshelf</button>
-<button class="button is-small is-info is-light fBestSellers">Best Sellers</button>
+  <br>
+  <!-- this is the bottom navbar that will only appear on mobile  -->
+  <br>
+  <div class="container is-max-widescreen has-text-centered">
+    <div class="notification is-info">
+      <!-- these are the bottom navbar buttons -->
+      <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
+      <button class="button is-small is-info is-light" id="fBookshelf">My Bookshelf</button>
+      <button class="button is-small is-info is-light" id="fBestSellers">Best Sellers</button>
+    </div>
   </div>
-</div>
 
 </body>
 <script src="./assets/js/script.js"></script>
+
 </html>
