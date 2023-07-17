@@ -15,24 +15,29 @@
     var questions = [
         {
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
-            showOptions:  ['tt5180504','tt2707408', 'tt8740790', 'tt4955642', 'tt5057054' ]
+            showOptions:  ['tt5180504','tt2861424', 'tt13918776', 'tt4955642', 'tt5071412' ]
+            // The Witcher, Rick & Morty, The Night Agent, The Good Place, Ozark
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
-            showOptions: ['tt7631058', 'tt0844441','tt1844624', 'tt0411008', 'tt4158110' ]
+            showOptions: ['tt7631058', 'tt0411008','tt1844624', 'tt3398228', 'tt9059760' ]
+            // LOTR: Rings of Power, Lost, American Horror Story, Bojack Horseman, Normal People
         },
-        /*{
+        {
             questionText: "Which of these shows would you always recommend to a friend?",
-            showOptions: []
+            showOptions: ['tt2707408','tt4158110', 'tt2560140', 'tt8577458', 'tt6548228']
+            // Narcos, Mr. Robot, Attack on Titan, High Fedlity, Castle Rock
         },
         {
             questionText: "Which of these shows would you recommend to a complete stranger?",
-            showOptions: []
+            showOptions: ['tt14452776', 'tt2802850', 'tt11247158', 'tt4574334','tt5753856']
+            // The Bear, Fargo, The Legend of Vox Machina, Stranger Things, Dark
         },
         {
             questionText: "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
-            showOptions: []
-        }*/
+            showOptions: ['tt8740790', 'tt7335184', 'tt5290382', 'tt5057054', 'tt0844441']
+            // Bridgerton, You, Mindhuntder, Jack Ryan, True Blood
+        }
     ];
     
         // For each show ID needs an array showing it's 5 book ISBN (25 variables) - Might be better to put the books into groups and create if statements for each answer?
