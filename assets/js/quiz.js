@@ -293,6 +293,7 @@
 
     function endQuiz () {
         // Function to redirect to results page
+        window.location.href ='quizResults.html';
     }
 
     newQuestion();
