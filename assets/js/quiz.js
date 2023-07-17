@@ -17,11 +17,11 @@
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
             showOptions:  ['tt5180504','tt2707408', 'tt8740790', 'tt4955642', 'tt5057054' ]
         },
-       /* {
-            questionText: "If you were bored and had nothing to do, which show would you go to first?",
-            answerOptions: []
-        },
         {
+            questionText: "If you were bored and had nothing to do, which show would you go to first?",
+            answerOptions: ['tt7631058', 'tt0844441','tt1844624', 'tt0411008', 'tt4158110' ]
+        },
+        /*{
             questionText: "Which of these shows would you always recommend to a friend?",
             answerOptions: []
         },
@@ -112,7 +112,12 @@
     var questionIndex = 0;
 
     function newQuestion(){
+        var quizQuest = document.getElementById("quiz-question");
+        quizQuest.textContent = questions[questionIndex].questionText;
         quizShowContent.innerHTML ='';
+        var noneBtn = document.createElement("button");
+        noneBtn.innerHTML = "None of These";
+        
 
         for ( var i = 0; i < 5; i++) {
             var show = questions[questionIndex].showOptions;
@@ -131,12 +136,15 @@
                     var showBtn = document.createElement("button");
                     var showTitle = document.createElement("h3");
                     var showImg = document.createElement("img");
+                    var noneBtn = document.createElement("button");
                     
                     showImg.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
                     showTitle.innerHTML = original_name;
+                    noneBtn.innerHTML = "None of These";
 
                     quizShowContent.appendChild(showBtn);
                     showBtn.append(showTitle, showImg);
+
         
                     // display question with for loop
                     // display showOptions with for loop
@@ -149,6 +157,8 @@
 
 
     }
+    quizShowContent.appendChild(noneBtn);
+
     };
 
     newQuestion();
