@@ -62,40 +62,16 @@ navBestSellersBtn.addEventListener('click', () => {
 
 
 // make quiz buttons clickable
+if (window.location.href.endsWith('index.html')) {
 startShowBtn.addEventListener('click', ()=> {
     window.location.href ='./assets/pages/quiz.html';
+    
 });
 
 //TODO: Replace link for movies quiz when / if ready
+
 startMovieBtn.addEventListener('click', ()=> {
     window.location.href ='./assets/pages/quiz.html';
-});
-
-
-// add event listeners for footer nav items
-footerNavExplore.addEventListener('click', () => {
-    if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/explore.html';
-    } else {
-        window.location.href ='explore.html';
-    }
-});
-footerNavBookshelf.addEventListener('click', () => {
-    if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/bookshelf.html';
-} else {
-    window.location.href ='bookshelf.html';
-}
-});
-
-// TODO: Replace link -Best sellers 
-footerNavBestSellers.addEventListener('click', () => {
-    
-    if (window.location.href.endsWith('index.html')) {
-        window.location.href ='./assets/pages/quiz.html';
-        } else {
-            window.location.href ='quiz.html';
-        }
 });
 
 // Set Featured Show Image (featuredSHOW) (featuredBOOK)
@@ -137,3 +113,4 @@ var showInfo = {
 
   showInfo.fetchInfo("tt4574334");
   bookInfo.fetchInfo("9781250147936");
+};
