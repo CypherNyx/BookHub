@@ -15,8 +15,8 @@
     var questions = [
         {
             questionText: "Let's say you were having a really awful day, which of these shows would you watch?",
-            showOptions:  ['tt5180504','tt2861424', 'tt13918776', 'tt4955642', 'tt5071412' ]
-            // The Witcher, Rick & Morty, The Night Agent, The Good Place, Ozark
+            showOptions:  ['tt5290382','tt2861424', 'tt13918776', 'tt4955642', 'tt5071412' ]
+            // MindHunter, Rick & Morty, The Night Agent, The Good Place, Ozark
         },
         {
             questionText: "If you were bored and had nothing to do, which show would you go to first?",
@@ -35,8 +35,8 @@
         },
         {
             questionText: "Last but not least, out of these 5 shows based on books, pick one that you've loved reading or want to read.",
-            showOptions: ['tt8740790', 'tt7335184', 'tt5290382', 'tt5057054', 'tt0844441']
-            // Bridgerton, You, Mindhuntder, Jack Ryan, True Blood
+            showOptions: ['tt8740790', 'tt7335184', 'tt5180504', 'tt5057054', 'tt0844441']
+            // Bridgerton, You, The Witcher, Jack Ryan, True Blood tt5180504
         }
     ];
     
