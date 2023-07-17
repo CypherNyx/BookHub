@@ -121,7 +121,7 @@
 
         for ( var i = 0; i < 5; i++) {
             var show = questions[questionIndex].showOptions;
-            console.log(show);
+            // console.log(show);
             var showInfo = {
                 fetchInfo: function (show) {
                     fetch ('https://api.themoviedb.org/3/find/' + show[i] + '?external_source=imdb_id' + tmdbKey
@@ -130,7 +130,7 @@
                     .then((data) => this.displayShowInfo(data))
                 },
                 displayShowInfo: function (data) {
-                    const { original_name, poster_path } = data.tv_results[0];
+                    const { original_name, poster_path, id } = data.tv_results[0];
                     //   console.log(data);
                     //   console.log(poster_path);
                     var showBtn = document.createElement("button");
@@ -144,6 +144,13 @@
 
                     quizShowContent.appendChild(showBtn);
                     showBtn.append(showTitle, showImg);
+
+                    showBtn.addEventListener("click", function() {
+                        selectedShows.push(id)
+                        localStorage.setItem("Show ID", JSON.stringify(selectedShows))
+                        // console.log(selectedShows)
+                        // nextQuestion();
+                    })
 
         
                     // display question with for loop
@@ -160,5 +167,18 @@
     quizShowContent.appendChild(noneBtn);
 
     };
+
+    // function nextQuestion() {
+    //     if (questionIndex < questionIndex.length -1) {
+    //         questionIndex++;
+    //         newQuestion();
+    //     } else {
+    //         endQuiz();
+    //     }
+    // }
+
+    // function endQuiz () {
+    //     // Function to redirect to results page
+    // }
 
     newQuestion();
