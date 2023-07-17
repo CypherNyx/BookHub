@@ -1,125 +1,62 @@
-/*STYLE 1
-/*background
-html {
-  background-color: papayawhip;
+/*STYLE 2*/
+body { 
+  background-color: #C4D7B2;
 }
 
-.is-info {
-  background-color: #F266AB !important;
+/*navbar*/
+body > nav > section > div.hero-head {
+  background-color: beige;
+  color: black;
 }
-/*Head
-.hero-head {
-  background-color: #FEA1A1 !important;
-}
+
 .is-size-3 {
-  margin-left: -80px;
+  margin-left: -70px;
+color: black;
 }
 
-.navbar-item:hover {
-background-color: #FFD3A3 !important;
-/*opacity: 0.5;
-font-size: medium;
-}
-
-/*hero-body
+/*hero body*/
 .hero-body {
-  background-color: papayawhip !important;
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+  /*background-image: linear-gradient( #176B87, #64CCC5);*/
+  background-image: linear-gradient( #0A6EBD, #A1C2F1);
 }
-
-.has-text-left {
-  background-color: #F266AB !important;
-  width: 1200px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
 .is-size-1 {
+  margin-left: -60px;
+}
+
+.is-size-4 {
+  margin-left: -60px;
+}
+
+/*decription element*/
+body > div:nth-child(9) > div {
+  margin-top: 250px;
+  margin-bottom: 125px;
+}
+
+body > div.container.is-max-desktop.has-text-centered > div {
+  margin-top: 250px;
+}
+
+/*image*/
+.has-text-right {
+  margin-top: -150px;
+  margin-right: -40px;
+}
+
+/*Example container*/
+.is-max-desktop {
   margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 310px;
-}
-
-.is-size-4 {
-  margin-top: 5px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 250px;
-}
-
-.is-max-desktop {
-  margin-top: 200px !important;
-}
-
-.is-light {
-  margin-top: auto;
 }
 
 
-/*image
-.has-text-right {
-  margin-top: -350px !important;
-  margin-right: -40px !important;
-}
-
-/*bottom navbar
-.is-small { 
-  color: antiquewhite !important;
-  font-size: medium !important;
-}
-*/
-
-
-
-
-/*STYLE 2
-html { 
-  background-color: #D6E8DB !important;
-}
-
-
-/*nav
-.navbar{
-  background-color: beige !important;
-}
-
-.navbar {
-  color: black !important;
-}
-
-.is-size-3 {
-  margin-left: -70px !important;
-color: black !important;
-}
-
-/*hero body
-.is-size-1 {
-  margin-left: -60px !important;
-}
-
-.is-size-4 {
-  margin-left: -60px !important;
-}
-
-/*image
-.has-text-right {
-  margin-top: -150px !important;
-  margin-right: -40px !important;
-}
-
-/*Example container
-.is-max-desktop {
-  margin-top: 100px !important;
-}
-
-
-/*bottom Navbar
+/*bottom Navbar*/
 .is-info {
-  margin-bottom: 100px !important;
-}*/
+  margin-bottom:-50px;
+}
+
+
+
+
 
 
 
