@@ -122,16 +122,37 @@ var nextQuestion = document.getElementById("next-btn");
 // Function to display questions and choices
 function loadQuestion() {
     var quizQuest = document.getElementById("quiz-question")
-    var quizChoices = document.getElementById("")
+    quizQuest.textContent = questions.questionText
 
+    // var quizChoices = document.getElementById("")
+
+    
+    // for (var i = 0; i < questions.answerOptions.length; i++) {
+    //     var showInfo = {
+    //         fetchInfo: function (question.answerOptions[i]) {
+    //             fetch ('https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
+    //             )
+    //             .then((response) => response.json())
+    //             .then((data) => this.displayshowInfo)
+    //         }
+    
+    //     }
+        
+
+    // }
 
 
 }
-        // Create function event to direct to next question
-            // Next button click event (if else statement to make sure they've selected something)
-        // Push book IDs into empty array based on option selected
-        // Math.random to return 5 ISBN options to the results page
-            // Call function for GoogleBooks API show the thumbnails
+
+// Create function event to direct to next question
+
+function nextQuestion() {
+    // Next button click event (if else statement to make sure they've selected something)
+
+}
+// Push book IDs into empty array based on option selected
+// Math.random to return 5 ISBN options to the results page
+// Call function for GoogleBooks API show the thumbnails
     
     
     
