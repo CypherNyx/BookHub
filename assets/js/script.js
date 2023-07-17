@@ -100,28 +100,30 @@ footerNavBestSellers.addEventListener('click', () => {
 
 // Set Featured Show Image (featuredSHOW) (featuredBOOK)
 
-// document.getElementById('poster').src = 'https://image.tmdb.org/t/p/w185' + poster_path;
-
 var showInfo = {
-    show: 'tt4574334',
     fetchInfo: function (show) {
       fetch(
-        'https://api.themoviedb.org/3/find/' + this.show + '?external_source=imdb_id' + tmdbKey
+        'https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
       )
         .then((response) => response.json())
-        .then((data) => console.log(data));
-
+        .then((data) => this.displayshowInfo(data));
     },
-    /*this.displayshowInfo(data));
+    
     displayshowInfo: function (data) {
       //const { name } = data.tv_results;
       const { original_name, media_type, overview, poster_path } = data.tv_results[0];
-      console.log('name:', original_name, 'media ', media_type, 'details: ', overview);
+      console.log(data);
       console.log(poster_path);
-      featuredSHOW.src = 'https://image.tmdb.org/t/p/w185' + poster_path;
-    //   document.getElementById('showName').innerHTML = original_name;
-      
-
-      
-    },*/
+      featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
+      document.getElementById('showTitle').innerHTML = original_name;
+            
+    },
   };
+
+  var bookInfo = {
+    fetchInfo: function (book) {
+        
+    }
+  }
+
+  showInfo.fetchInfo("tt4574334")
