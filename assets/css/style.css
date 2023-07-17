@@ -9,11 +9,16 @@ body > nav > section > div.hero-head {
   color: white;
 }
 
-
 .is-size-3 {
   margin-left: -70px;
 color: white;
 }
+
+/* NAVBAR HOMEBTTN HERE*/
+  .is-size-3:hover {
+    background-color: #3e8ed0;
+    margin: auto;
+  }
 
 /*hero body*/
 .hero-body {
@@ -22,12 +27,16 @@ color: white;
     );
     background-blend-mode: normal;
 }
+
 .is-size-1 {
   margin-left: -60px;
+  white-space: normal;
 }
 
 .is-size-4 {
   margin-left: -5%;
+  white-space: normal;
+  display: flex;
 }
 
 /*decription element*/
@@ -45,20 +54,18 @@ body > div.container.is-max-desktop.has-text-centered > div {
 .has-text-right {
   width: 100%;
   height: auto;
-  /*margin-top: -10%;
-  margin-right: -1%;*/
+  margin-top: -10%;
+  margin-right: -1%;
+  white-space: normal;
 }
 
 /*Example container*/
 .is-max-desktop {
   margin-top: 100px;
+  box-shadow: 10px 10px 5px #75C2F6;
 }
 
 /*Card*/
-.is-size-6 {
-  margin-right: 150%;
-}
-
 .cards {
   display: flex;
 }
@@ -72,32 +79,33 @@ body > div.container.is-max-desktop.has-text-centered > div {
 .card:not(:first-child) {
   margin-left: -2rem;
 }
-.card:not(:last-child):hover,
-.card:not(:last-child):focus-within {
-  transform: translateY(-1rem);
-  ~ .card {
-    transform: translateX(2rem);
-  }
-}
 
-.column {
-  margin-right: 50px;
-}
+
+
+
 
 /* TO DO HOMEPAGE*/
 /*
 ------BRING THE IMAGES CLOSER TOGETHER WRITING---Done
 ------PLAY WITH BOTH COLORS END WITH WHITE---Done
 ------REMOVE THE BLANK SPACE.----Done 
-BRINGING THE BOOK AND THE MOVIE IMAGES CLOSER
-MOVE OVER THE HOVER EFFECT ON THE NAV BAR
+------BRINGING THE BOOK AND THE MOVIE IMAGES CLOSER---Done
+------MOVE OVER THE HOVER EFFECT ON THE NAV BAR---Done
 MARGIN HERO AND NAVBAR NEED TO FIX 
 
 
 
-/*TO DO QUIZ PAGE*/
-/*HOVER EFFECT OVER THE TITLE CARDS*/
-/* take put neg margin between questions and
+/*TO DO QUIZ PAGE
+------HOVER EFFECT OVER THE TITLE CARDS---Done
+take put neg margin between questions and
 
 
+/*Quiz HTML*/
+.is-child:hover {
+  background-color: #3e8ed0;
+  margin: auto;
+}
 
+.body > section > div:nth-child(1) > div.container.is-max-desktop.has-text-centered {
+margin-right: 200px;
+}
