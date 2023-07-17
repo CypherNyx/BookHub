@@ -122,8 +122,14 @@ var showInfo = {
 
   var bookInfo = {
     fetchInfo: function (book) {
-        
-    }
+        fetch(
+            'https://www.googleapis.com/books/v1/volumes?q=isbn:'+ book +'&key=' + googleBooksKey
+
+        )
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+    },
   }
 
-  showInfo.fetchInfo("tt4574334")
+  showInfo.fetchInfo("tt4574334");
+  bookInfo.fetchInfo("9781250147936");
