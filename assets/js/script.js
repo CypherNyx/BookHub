@@ -44,19 +44,19 @@ navExploreBtn.addEventListener('click', () => {
 });
 navBookshelfBtn.addEventListener('click', () => {
     if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/bookshelf.html';
+    window.location.href ='./assets/pages/quizResults.html';
 } else {
-    window.location.href ='bookshelf.html';
+    window.location.href ='quizResults.html';
 }
 });
 
-// TODO: Replace link -Best sellers page is still a MAYBE for now?
+//  Explore
 navBestSellersBtn.addEventListener('click', () => {
     
     if (window.location.href.endsWith('index.html')) {
-        window.location.href ='./assets/pages/quiz.html';
+        window.location.href ='./assets/pages/explore.html';
         } else {
-            window.location.href ='quiz.html';
+            window.location.href ='explore.html';
         }
 });
 
