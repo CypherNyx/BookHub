@@ -204,38 +204,13 @@ function getStorage() {
     };
     console.log(userRecommendations);
 
-    //*******************************************************/
-
-
-
-    // var groups = bookGroups.filter(checkShowID)
-
-    // function checkShowID() {
-    //     return selectedShows = bookGroups.showID
-    // }
-    // console.log(groups)
-
-
-/************ Annie's last Save: 
-    
     for (var i = 0; i < 5; i++) {
-        var result = bookGroups.filter(obj =>  obj.showID == selectedShows[i])
+        var random = userRecommendations[Math.floor(Math.random() * userRecommendations.length)]
+        // console.log(random)
+        userResults.push(random)
+        }
         
-    }
-        console.log(result)  
-        
-        ************* */
-        
-
-    // selectedShows.forEach(function() {
-    //     if (selectedShows == bookGroups[selectedIndex].showID) {
-    //         var groups = bookGroups[selectedIndex]
-    //         console.log(groups)
-    //         userRecommendations.push(groups.bookIDs)
-    //     }
-    // });
-    // console.log(userRecommendations)
-
+    console.log(userResults)
 }
 
 getStorage()
