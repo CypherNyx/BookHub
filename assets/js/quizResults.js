@@ -183,22 +183,60 @@ var bookGroups = [
     },
 ];
 
-
 var groupIndex = 0;
 
 
 // 	[66573,84773,1429,66732,91239]
 
 function getStorage() {
-    var selectedShows = JSON.parse(localStorage.getItem("Show ID"))
-    console.log("SelectedShows", selectedShows)
+    var selectedShows = JSON.parse(localStorage.getItem("Show ID"));
+    console.log("SelectedShows", selectedShows);
 
+    console.log(typeof selectedShows[0]);
+    console.log(selectedShows[0]);
 
-        
+    //***** Using includes() a second Try - DG *******/
     
-    console.log(userRecommendations)
+    for (var i = 0; i < bookGroups.length; i++) {
+        if (selectedShows.includes(bookGroups[i].showID)){
+            userRecommendations = userRecommendations.concat(bookGroups[i].bookIDs);
+        }
+    };
+    console.log(userRecommendations);
 
-};
+    //*******************************************************/
+
+
+
+    // var groups = bookGroups.filter(checkShowID)
+
+    // function checkShowID() {
+    //     return selectedShows = bookGroups.showID
+    // }
+    // console.log(groups)
+
+
+/************ Annie's last Save: 
+    
+    for (var i = 0; i < 5; i++) {
+        var result = bookGroups.filter(obj =>  obj.showID == selectedShows[i])
+        
+    }
+        console.log(result)  
+        
+        ************* */
+        
+
+    // selectedShows.forEach(function() {
+    //     if (selectedShows == bookGroups[selectedIndex].showID) {
+    //         var groups = bookGroups[selectedIndex]
+    //         console.log(groups)
+    //         userRecommendations.push(groups.bookIDs)
+    //     }
+    // });
+    // console.log(userRecommendations)
+
+}
 
 getStorage()
 
