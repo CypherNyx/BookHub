@@ -209,7 +209,9 @@ function getStorage() {
     for (var i = 0; i < 5; i++) {
         var random = userRecommendations[Math.floor(Math.random() * userRecommendations.length)]
         // console.log(random)
-        userResults.push(random)
+            if (!userResults.includes(random)) {
+            userResults.push(random);
+            }
         }
         
     console.log("MathRandom", userResults)
@@ -231,7 +233,7 @@ function displayResults() {
             .then (function (data) {
                 console.log('Fetch Response \n-----------');
                 console.log(data);
-                const { title, imageLinks, authors, infoLink } = data.items[0].volumeInfo;
+                const { title, imageLinks, authors, previewLink } = data.items[0].volumeInfo;
                 // console.log(data)
                 var bookBtn = document.createElement("button")
                 var bookTitle = document.createElement("h3");
@@ -239,12 +241,13 @@ function displayResults() {
                 var bookLink = document.createElement("a")
 
                 bookImg.src = imageLinks.thumbnail;
-                bookLink.href = infoLink
-                bookLink.textContent = "Check in GoogleBooks!"
-                bookTitle.innerHTML = title + "by: " + authors
+                bookLink.href = previewLink
+                // bookLink.textContent = "Check in GoogleBooks!"
+                bookTitle.innerHTML = title + " by: " + authors
 
-                resultsContent.appendChild(bookBtn)
-                bookBtn.append(bookTitle, bookImg, bookLink)
+                resultsContent.appendChild(bookLink)
+                bookLink.appendChild(bookBtn)
+                bookBtn.append(bookTitle, bookImg)
             })
         }
 }
