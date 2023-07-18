@@ -82,26 +82,14 @@ body > div.container.is-max-desktop.has-text-centered > div {
 
 
 
-/* TO DO HOMEPAGE*/
-/*
-------BRING THE IMAGES CLOSER TOGETHER WRITING---Done
-------PLAY WITH BOTH COLORS END WITH WHITE---Done
-------REMOVE THE BLANK SPACE.----Done 
-------BRINGING THE BOOK AND THE MOVIE IMAGES CLOSER---Done
-------MOVE OVER THE HOVER EFFECT ON THE NAV BAR---Done
+
+/* TO DO HOMEPAGE
 MARGIN HERO AND NAVBAR NEED TO FIX 
 
 
 
-/*TO DO QUIZ PAGE
-------HOVER EFFECT OVER THE TITLE CARDS---Done
-take out neg margin between questions and
+/*QuizRESULTS HTML*/
 
-
-/*Quiz HTML*/
-.is-child:hover {
-  background-color: /*#A0BFE0*/ #3e8ed0;
-}
 
 .body > section > div:nth-child(1) > div.container.is-max-desktop.has-text-centered {
 margin-right: 200px;
@@ -172,3 +160,17 @@ margin-right: 200px;
   text-align: center
 }
 
+
+
+
+/*QUIZRESULTS*/
+.results-container > a:nth-child(1) > button {
+  margin: 25px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center
+}
