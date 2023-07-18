@@ -61,6 +61,66 @@ navBestSellersBtn.addEventListener('click', () => {
 });
 
 
+
+
+
+//From here down this script only runs on Index.html
+// make quiz buttons clickable. 
+if (window.location.href.endsWith('index.html')) {
+    startShowBtn.addEventListener('click', ()=> {
+        window.location.href ='./assets/pages/quiz.html';
+        
+    });
+    
+    //TODO: Replace link for movies quiz when / if ready
+    
+    startMovieBtn.addEventListener('click', ()=> {
+        window.location.href ='./assets/pages/quiz.html';
+});
+
+// Set Featured Show Image (featuredSHOW) (featuredBOOK)
+
+var showInfo = {
+    fetchInfo: function (show) {
+        fetch(
+            'https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
+            )
+            .then((response) => response.json())
+            .then((data) => this.displayshowInfo(data));
+        },
+        
+        displayshowInfo: function (data) {
+            const { original_name, poster_path } = data.tv_results[0];
+            //   console.log(data);
+    //   console.log(poster_path);
+    featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
+    document.getElementById('showTitle').innerHTML = original_name;
+    
+},
+};
+
+var bookInfo = {
+    fetchInfo: function (book) {
+        fetch(
+            'https://www.googleapis.com/books/v1/volumes?q=isbn:'+ book +'&key=' + googleBooksKey
+            )
+        .then((response) => response.json())
+        .then((data) => this.displayBookInfo(data));
+    },
+    
+    displayBookInfo: function (data) {
+        const { title, imageLinks, authors } = data.items[0].volumeInfo;
+        featuredBOOK.src=imageLinks.thumbnail;
+        document.getElementById('bookTitle').innerHTML = `${title} \nby ${authors[0]}`;
+    },
+};
+
+showInfo.fetchInfo("tt4574334");
+bookInfo.fetchInfo("9781250147936");
+};
+
+
+
 //Make mobile Nava Menu animated
 new Vue({
     el: '#app',
@@ -68,60 +128,3 @@ new Vue({
         showNav: false
     }
   });
-
-
-
-//From here down this script only runs on Index.html
-// make quiz buttons clickable. 
-if (window.location.href.endsWith('index.html')) {
-startShowBtn.addEventListener('click', ()=> {
-    window.location.href ='./assets/pages/quiz.html';
-    
-});
-
-//TODO: Replace link for movies quiz when / if ready
-
-startMovieBtn.addEventListener('click', ()=> {
-    window.location.href ='./assets/pages/quiz.html';
-});
-
-// Set Featured Show Image (featuredSHOW) (featuredBOOK)
-
-var showInfo = {
-    fetchInfo: function (show) {
-      fetch(
-        'https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
-      )
-        .then((response) => response.json())
-        .then((data) => this.displayshowInfo(data));
-    },
-    
-    displayshowInfo: function (data) {
-      const { original_name, poster_path } = data.tv_results[0];
-    //   console.log(data);
-    //   console.log(poster_path);
-      featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
-      document.getElementById('showTitle').innerHTML = original_name;
-            
-    },
-  };
-
-  var bookInfo = {
-    fetchInfo: function (book) {
-        fetch(
-            'https://www.googleapis.com/books/v1/volumes?q=isbn:'+ book +'&key=' + googleBooksKey
-        )
-        .then((response) => response.json())
-        .then((data) => this.displayBookInfo(data));
-    },
-
-    displayBookInfo: function (data) {
-        const { title, imageLinks, authors } = data.items[0].volumeInfo;
-        featuredBOOK.src=imageLinks.thumbnail;
-        document.getElementById('bookTitle').innerHTML = `${title} \nby ${authors[0]}`;
-        },
-  };
-
-  showInfo.fetchInfo("tt4574334");
-  bookInfo.fetchInfo("9781250147936");
-};
