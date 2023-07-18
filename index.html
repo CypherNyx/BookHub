@@ -11,6 +11,7 @@
 
 <body>
   <!-- This is the code for the navbar/hero -->
+  <div id="app">
   <nav>
     <section class="hero is-info is-small">
       <div class="hero-head">
@@ -20,11 +21,12 @@
               <div class="navbar-item">
                 <div class="is-size-3" id="homeBtn"><strong>BookHub</strong></div>
               </div>
-              <span class="navbar-burger" data-target="navbarMenuHeroA"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+              <div class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+              <span id="burgerQuiz">Quiz</span>
+              <span id="burgerExplore">Explore</span>
+              <span id="burgerBookshelf">Bookshelf</span>
+            </div>
+
             </div>
             <!-- the navbar buttons are here -->
             <div id="navbarMenuHeroA" class="navbar-menu">
@@ -39,7 +41,7 @@
                   Best Sellers
                 </a>
 
-             </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -63,9 +65,10 @@
           <img src="./assets/images/girlReading3.png">
         </div>
         <br>
-        </div>
+      </div>
     </section>
   </nav>
+</div>
   <br>
   <br>
   <!-- This is the code for the description element -->
@@ -142,17 +145,17 @@
 
   <br>
   <!-- this is the bottom navbar that will only appear on mobile  -->
-  <br>
-  <div class="container is-max-widescreen has-text-centered">
-    <div class="notification is-info">
-      <!-- these are the bottom navbar buttons -->
-      <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
+  <!-- <div class="container is-max-widescreen has-text-centered">
+    <div class="notification is-info"> -->
+  <!-- these are the bottom navbar buttons -->
+  <!-- <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
       <button class="button is-small is-info is-light" id="fBookshelf">My Bookshelf</button>
       <button class="button is-small is-info is-light" id="fBestSellers">Best Sellers</button>
     </div>
-  </div>
+  </div> -->
 
+  <script src="./assets/js/script.js"></script>
+  <script src=" https://unpkg.com/vue"></script>
 </body>
-<script src="./assets/js/script.js"></script>
 
 </html>

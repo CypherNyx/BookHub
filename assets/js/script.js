@@ -61,7 +61,18 @@ navBestSellersBtn.addEventListener('click', () => {
 });
 
 
-// make quiz buttons clickable
+//Make mobile Nava Menu animated
+new Vue({
+    el: '#app',
+    data: {
+        showNav: false
+    }
+  });
+
+
+
+//From here down this script only runs on Index.html
+// make quiz buttons clickable. 
 if (window.location.href.endsWith('index.html')) {
 startShowBtn.addEventListener('click', ()=> {
     window.location.href ='./assets/pages/quiz.html';
