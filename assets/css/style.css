@@ -25,6 +25,8 @@ color: white;
       180deg, #1D5D9B/*#35A29F*/, #75C2F6/*#97FEED*/,#FFFFFF 
     );
     background-blend-mode: normal;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .is-size-1 {
@@ -48,14 +50,22 @@ body > div.container.is-max-desktop.has-text-centered > div {
   margin-top: 50px;
 }
 
-/* NEEDS TO BE WORKED ON!!!*/
+
 /*image*/
 .has-text-right {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin-top: -10%;
   margin-right: -1%;
   white-space: normal;
+  margin-bottom: 100px;
+    width: 50%
+}
+.has-text-left {
+  width: 50%;
+  margin-left: 70px;
+  margin-bottom: 100px;
+  width: 50%;
 }
 
 /*Example container*/
@@ -78,30 +88,7 @@ body > div.container.is-max-desktop.has-text-centered > div {
   margin-left: -2rem;
 }
 
-
-
-
-
-/* TO DO HOMEPAGE*/
-/*
-------BRING THE IMAGES CLOSER TOGETHER WRITING---Done
-------PLAY WITH BOTH COLORS END WITH WHITE---Done
-------REMOVE THE BLANK SPACE.----Done 
-------BRINGING THE BOOK AND THE MOVIE IMAGES CLOSER---Done
-------MOVE OVER THE HOVER EFFECT ON THE NAV BAR---Done
-MARGIN HERO AND NAVBAR NEED TO FIX 
-
-
-
-/*TO DO QUIZ PAGE
-------HOVER EFFECT OVER THE TITLE CARDS---Done
-take out neg margin between questions and
-
-
-/*Quiz HTML*/
-.is-child:hover {
-  background-color: /*#A0BFE0*/ #3e8ed0;
-}
+/*QuizRESULTS HTML*/
 
 .body > section > div:nth-child(1) > div.container.is-max-desktop.has-text-centered {
 margin-right: 200px;
@@ -172,3 +159,16 @@ margin-right: 200px;
   text-align: center
 }
 
+
+
+
+/*QUIZRESULTS*/
+#quiz-question {
+  text-align: center;
+  display: inline-block;
+}
+#results-container > a > button {
+  margin: 25px 10px; 
+  height: ;
+/* mod height n width*/
+}
