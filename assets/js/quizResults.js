@@ -1,3 +1,5 @@
+// Variable for GoogleBooksKey
+var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
 
 // For 25 books isbn
 var userRecommendations = [];
@@ -202,19 +204,55 @@ function getStorage() {
             userRecommendations = userRecommendations.concat(bookGroups[i].bookIDs);
         }
     };
-    console.log(userRecommendations);
+    // console.log(userRecommendations);
 
     for (var i = 0; i < 5; i++) {
         var random = userRecommendations[Math.floor(Math.random() * userRecommendations.length)]
         // console.log(random)
-        userResults.push(random)
+            if (!userResults.includes(random)) {
+            userResults.push(random);
+            }
         }
         
-    console.log(userResults)
+    console.log("MathRandom", userResults)
 }
 
+var resultsContent = document.getElementById("results-container")
+
+var bookIndex = 0;
 getStorage()
 
+function displayResults() {
+    for (var i = 0; i < 5; i++) {
+        var googleBooksURL = "https://www.googleapis.com/books/v1/volumes?q=isbn:" + userResults[i] + "&key=" + googleBooksKey;
+        // console.log(googleBooksURL)
+        fetch(googleBooksURL)
+            .then(function (response){
+                return response.json()
+            })
+            .then (function (data) {
+                console.log('Fetch Response \n-----------');
+                console.log(data);
+                const { title, imageLinks, authors, previewLink } = data.items[0].volumeInfo;
+                // console.log(data)
+                var bookBtn = document.createElement("button")
+                var bookTitle = document.createElement("h3");
+                var bookImg = document.createElement("img")
+                var bookLink = document.createElement("a")
+
+                bookImg.src = imageLinks.thumbnail;
+                bookLink.href = previewLink
+                // bookLink.textContent = "Check in GoogleBooks!"
+                bookTitle.innerHTML = title + " by: " + authors
+
+                resultsContent.appendChild(bookLink)
+                bookLink.appendChild(bookBtn)
+                bookBtn.append(bookTitle, bookImg)
+            })
+        }
+}
+
+displayResults()
 // Pull from localstorage to and compare showID with BookIDs
 // getitem from localstorage and parse it
 // make variable that holds parsed localstorage showIDs (var selectedShows)

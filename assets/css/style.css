@@ -17,7 +17,6 @@ color: white;
 /* NAVBAR HOMEBTTN HERE*/
   .is-size-3:hover {
     background-color: #3e8ed0;
-    margin: auto;
   }
 
 /*hero body*/
@@ -62,7 +61,6 @@ body > div.container.is-max-desktop.has-text-centered > div {
 /*Example container*/
 .is-max-desktop {
   margin-top: 100px;
-  box-shadow: 10px 10px 5px #75C2F6;
 }
 
 /*Card*/
@@ -103,9 +101,74 @@ take out neg margin between questions and
 /*Quiz HTML*/
 .is-child:hover {
   background-color: /*#A0BFE0*/ #3e8ed0;
-  margin: auto;
 }
 
 .body > section > div:nth-child(1) > div.container.is-max-desktop.has-text-centered {
 margin-right: 200px;
 }
+
+/*QUIZ BUTTON*/
+.h3 {
+ text-align: top center;
+}
+.is-ancestor > button:nth-child(1) {
+  margin: 25px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center
+}
+.is-ancestor > button:nth-child(2) {
+  margin: 25px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center
+  }
+  .is-ancestor > button:nth-child(3) {
+    margin: 25px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center
+  }
+  .is-ancestor > button:nth-child(4) {
+    margin: 25px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center
+  }
+.is-ancestor > button:nth-child(5) {
+  margin: 25px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center
+} 
+.is-ancestor > button:nth-child(6) {
+  margin: 25px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center
+}
+
