@@ -186,3 +186,9 @@ body>div.container.is-max-desktop.has-text-centered>div {
   height: 5rem;
   /* mod height n width*/
 }
+
+#results-container>a>button>h3 {
+  margin-bottom: 7%;
+  max-width: 80%;
+  text-align: center;
+}
