@@ -183,6 +183,7 @@ var bookGroups = [
     },
 ];
 
+
 var groupIndex = 0;
 
 
@@ -192,32 +193,12 @@ function getStorage() {
     var selectedShows = JSON.parse(localStorage.getItem("Show ID"))
     console.log("SelectedShows", selectedShows)
 
-    console.log(typeof selectedShows[0])
-    console.log(selectedShows[0])
 
-    // var groups = bookGroups.filter(checkShowID)
-
-    // function checkShowID() {
-    //     return selectedShows = bookGroups.showID
-    // }
-    // console.log(groups)
-
-    for (var i = 0; i < 5; i++) {
-        var result = bookGroups.filter(obj =>  obj.showID == selectedShows[i])
         
-    }
-        console.log(result)
-        
-    // selectedShows.forEach(function() {
-    //     if (selectedShows == bookGroups[selectedIndex].showID) {
-    //         var groups = bookGroups[selectedIndex]
-    //         console.log(groups)
-    //         userRecommendations.push(groups.bookIDs)
-    //     }
-    // });
-    // console.log(userRecommendations)
+    
+    console.log(userRecommendations)
 
-}
+};
 
 getStorage()
 
