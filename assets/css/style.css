@@ -97,12 +97,12 @@ MARGIN HERO AND NAVBAR NEED TO FIX
 
 /*TO DO QUIZ PAGE
 ------HOVER EFFECT OVER THE TITLE CARDS---Done
-take put neg margin between questions and
+take out neg margin between questions and
 
 
 /*Quiz HTML*/
 .is-child:hover {
-  background-color: #3e8ed0;
+  background-color: /*#A0BFE0*/ #3e8ed0;
   margin: auto;
 }
 
