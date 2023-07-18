@@ -1,6 +1,6 @@
 // Quiz page Variables
     // Variables for API Keys - GoogleBook API and TMBD
-    var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
+    var googleBooksKey = "AIzaSyBSGiO1LqCBsdlWOKX20F6c1qg4EYyLWgA";
 
     var tmdbKey = "&api_key=1866aca8e0c0dfcbef153230d45d9a50";
     

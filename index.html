@@ -11,62 +11,64 @@
 
 <body>
   <!-- This is the code for the navbar/hero -->
-  <nav>
-    <section class="hero is-info is-small">
-      <div class="hero-head">
-        <nav class="navbar mainNavCustom">
-          <div class="container">
-            <div class="navbar-brand">
-              <div class="navbar-item">
-                <div class="is-size-3" id="homeBtn"><strong>BookHub</strong></div>
-              </div>
-              <span class="navbar-burger" data-target="navbarMenuHeroA"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <!-- the navbar buttons are here -->
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item" id="explore">
-                  Explore Books
-                </a>
-                <a class="navbar-item" id="bookshelf">
-                  My Bookshelf
-                </a>
-                <a class="navbar-item" id="bestSellers">
-                  Best Sellers
-                </a>
+  <div id="app">
+    <nav>
+      <section class="hero is-info is-small">
+        <div class="hero-head">
+          <nav class="navbar mainNavCustom">
+            <div class="container">
+              <div class="navbar-brand">
+                <div class="navbar-item">
+                  <div class="is-size-3" id="homeBtn"><strong>BookHub</strong></div>
+                </div>
+                <div class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+                  <span id="burgerQuiz">Quiz</span>
+                  <span id="burgerExplore">Explore</span>
+                  <span id="burgerBookshelf">Bookshelf</span>
+                </div>
 
-                </a>
-                </span>
+              </div>
+              <!-- the navbar buttons are here -->
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item" id="explore">
+                    Explore Books
+                  </a>
+                  <a class="navbar-item" id="bookshelf">
+                    My Bookshelf
+                  </a>
+                  <a class="navbar-item" id="bestSellers">
+                    Best Sellers
+                  </a>
+
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-      <div class="hero-body">
-        <div class="container has-text-left">
-          <br>
-          <br>
-          <br>
-          <p>
-            <strong class="is-size-1">Welcome to BookHub!</strong>
-          </p>
-          <div class="is-size-4">
-            Our goal is to get you to stop binging and start reading!
+          </nav>
+        </div>
+        <div class="hero-body">
+          <div class="container has-text-left">
             <br>
-            Below is a quiz that will take in your favorite movies or shows and recommend a book!
-          </div>
+            <br>
+            <br>
+            <p>
+              <strong class="is-size-1">Welcome to BookHub!</strong>
+            </p>
+            <div class="is-size-4">
+              Our goal is to get you to stop binging and start reading!
+              <br>
+              Below is a quiz that will take in your favorite movies or shows and recommend a book!
+            </div>
 
+          </div>
+          <div class="container has-text-right">
+            <img src="./assets/images/girlReading3.png">
+          </div>
+          <br>
         </div>
-        <div class="container has-text-right">
-          <img src="./assets/images/girlReading3.png">
-        </div>
-        <br>
-    </section>
-  </nav>
+      </section>
+    </nav>
+  </div>
   <br>
   <br>
   <!-- This is the code for the description element -->
@@ -143,17 +145,17 @@
 
   <br>
   <!-- this is the bottom navbar that will only appear on mobile  -->
-  <br>
-  <div class="container is-max-widescreen has-text-centered">
-    <div class="notification is-info">
-      <!-- these are the bottom navbar buttons -->
-      <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
+  <!-- <div class="container is-max-widescreen has-text-centered">
+    <div class="notification is-info"> -->
+  <!-- these are the bottom navbar buttons -->
+  <!-- <button class="button is-small is-info is-light" id="fExplore">Explore Books</button>
       <button class="button is-small is-info is-light" id="fBookshelf">My Bookshelf</button>
       <button class="button is-small is-info is-light" id="fBestSellers">Best Sellers</button>
     </div>
-  </div>
+  </div> -->
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
-<script src="./assets/js/script.js"></script>
 
 </html>

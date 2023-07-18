@@ -22,7 +22,7 @@ var featuredSHOW = document.getElementById("FeaturedSHOWImg");
 var featuredBOOK = document.getElementById("FeaturedBOOKImg");
 
 // Variables for API Keys - GoogleBook API and TMBD
-var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
+var googleBooksKey = "AIzaSyBSGiO1LqCBsdlWOKX20F6c1qg4EYyLWgA";
 var tmdbKey = "&api_key=1866aca8e0c0dfcbef153230d45d9a50";
 
 
@@ -44,73 +44,87 @@ navExploreBtn.addEventListener('click', () => {
 });
 navBookshelfBtn.addEventListener('click', () => {
     if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/bookshelf.html';
+    window.location.href ='./assets/pages/quizResults.html';
 } else {
-    window.location.href ='bookshelf.html';
+    window.location.href ='quizResults.html';
 }
 });
 
-// TODO: Replace link -Best sellers page is still a MAYBE for now?
+//  Explore
 navBestSellersBtn.addEventListener('click', () => {
     
     if (window.location.href.endsWith('index.html')) {
-        window.location.href ='./assets/pages/quiz.html';
+        window.location.href ='./assets/pages/explore.html';
         } else {
-            window.location.href ='quiz.html';
+            window.location.href ='explore.html';
         }
 });
 
 
-// make quiz buttons clickable
+
+
+
+//From here down this script only runs on Index.html
+// make quiz buttons clickable. 
 if (window.location.href.endsWith('index.html')) {
-startShowBtn.addEventListener('click', ()=> {
-    window.location.href ='./assets/pages/quiz.html';
+    startShowBtn.addEventListener('click', ()=> {
+        window.location.href ='./assets/pages/quiz.html';
+        
+    });
     
-});
-
-//TODO: Replace link for movies quiz when / if ready
-
-startMovieBtn.addEventListener('click', ()=> {
-    window.location.href ='./assets/pages/quiz.html';
+    //TODO: Replace link for movies quiz when / if ready
+    
+    startMovieBtn.addEventListener('click', ()=> {
+        window.location.href ='./assets/pages/quiz.html';
 });
 
 // Set Featured Show Image (featuredSHOW) (featuredBOOK)
 
 var showInfo = {
     fetchInfo: function (show) {
-      fetch(
-        'https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
-      )
-        .then((response) => response.json())
-        .then((data) => this.displayshowInfo(data));
-    },
-    
-    displayshowInfo: function (data) {
-      const { original_name, poster_path } = data.tv_results[0];
-    //   console.log(data);
+        fetch(
+            'https://api.themoviedb.org/3/find/' + show + '?external_source=imdb_id' + tmdbKey
+            )
+            .then((response) => response.json())
+            .then((data) => this.displayshowInfo(data));
+        },
+        
+        displayshowInfo: function (data) {
+            const { original_name, poster_path } = data.tv_results[0];
+            //   console.log(data);
     //   console.log(poster_path);
-      featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
-      document.getElementById('showTitle').innerHTML = original_name;
-            
-    },
-  };
+    featuredSHOW.src = 'https://image.tmdb.org/t/p/w342' + poster_path;
+    document.getElementById('showTitle').innerHTML = original_name;
+    
+},
+};
 
-  var bookInfo = {
+var bookInfo = {
     fetchInfo: function (book) {
         fetch(
             'https://www.googleapis.com/books/v1/volumes?q=isbn:'+ book +'&key=' + googleBooksKey
-        )
+            )
         .then((response) => response.json())
         .then((data) => this.displayBookInfo(data));
     },
-
+    
     displayBookInfo: function (data) {
         const { title, imageLinks, authors } = data.items[0].volumeInfo;
         featuredBOOK.src=imageLinks.thumbnail;
         document.getElementById('bookTitle').innerHTML = `${title} \nby ${authors[0]}`;
-        },
-  };
-
-  showInfo.fetchInfo("tt4574334");
-  bookInfo.fetchInfo("9781250147936");
+    },
 };
+
+showInfo.fetchInfo("tt4574334");
+bookInfo.fetchInfo("9781250147936");
+};
+
+
+
+//Make mobile Nava Menu animated
+new Vue({
+    el: '#app',
+    data: {
+        showNav: false
+    }
+  });
