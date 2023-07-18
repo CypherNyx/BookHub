@@ -108,6 +108,9 @@ margin-right: 200px;
 }
 
 /*QUIZ BUTTON*/
+.h3 {
+ text-align: top center;
+}
 .is-ancestor > button:nth-child(1) {
   margin: 25px 10px;
   display: block;
