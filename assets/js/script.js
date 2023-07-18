@@ -121,10 +121,3 @@ bookInfo.fetchInfo("9781250147936");
 
 
 
-//Make mobile Nava Menu animated
-new Vue({
-    el: '#app',
-    data: {
-        showNav: false
-    }
-  });
