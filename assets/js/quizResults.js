@@ -1,5 +1,5 @@
 // Variable for GoogleBooksKey
-var googleBooksKey = "AIzaSyCtpFU2A6HSKklQfEKS0tabr54FI8fyQjc";
+var googleBooksKey = "AIzaSyBSGiO1LqCBsdlWOKX20F6c1qg4EYyLWgA";
 
 // For 25 books isbn
 var userRecommendations = [];
