@@ -9,7 +9,7 @@
         // Questions: array with objects in it that include questions and choices
         // Empty array to push book ISBN based on selected shows
         var selectedShows = [];
-        
+
         var quizShowContent = document.getElementById('fiveShowsPage');
         // Answers array with show IDs
     var questions = [
@@ -59,7 +59,7 @@
 
         for ( var i = 0; i < 5; i++) {
             var show = questions[questionIndex].showOptions;
-            // console.log(show);
+            console.log(show);
             var showInfo = {
                 fetchInfo: function (show) {
                     fetch ('https://api.themoviedb.org/3/find/' + show[i] + '?external_source=imdb_id' + tmdbKey
