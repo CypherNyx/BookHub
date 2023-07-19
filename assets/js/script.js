@@ -25,7 +25,7 @@ var featuredBOOK = document.getElementById("FeaturedBOOKImg");
 var googleBooksKey = "AIzaSyBSGiO1LqCBsdlWOKX20F6c1qg4EYyLWgA";
 var tmdbKey = "&api_key=1866aca8e0c0dfcbef153230d45d9a50";
 
-
+/*
 // Event listeners for Main navbar - DG
 navHomeBtn.addEventListener('click', () => {
     if (window.location.href.endsWith('index.html')) {
@@ -61,7 +61,7 @@ navBestSellersBtn.addEventListener('click', () => {
 });
 
 
-
+*/
 
 
 //From here down this script only runs on Index.html
