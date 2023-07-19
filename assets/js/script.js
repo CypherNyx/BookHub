@@ -31,18 +31,18 @@ navHomeBtn.addEventListener('click', () => {
         window.location.href ='index.html';
     });
 
-navExploreBtn.addEventListener('click', () => {
+/*navExploreBtn.addEventListener('click', () => {
      window.location.href ='explore.html';
-  });
+  });*/
 
 navBookshelfBtn.addEventListener('click', () => {
    window.location.href ='quizResults.html';
 });
 
 //  Explore
-navBestSellersBtn.addEventListener('click', () => {
+/*navBestSellersBtn.addEventListener('click', () => {
                    window.location.href ='explore.html';
-        });
+        });*/
 
 
 //From here down this script only runs on Index.html
