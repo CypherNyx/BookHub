@@ -6,7 +6,7 @@ The user will be presented with a list of shows to choose between and, based on 
 
 ## Deployed Application
 You can view the live application
-[➡️ here](https://cyphernyx.github.io/javascript-code-quiz/)
+[➡️ here](https://cyphernyx.github.io/BookHub/)
 
 ![Home Page](./assets/images/HomePage.png )
 ![Quiz Page](./assets/images/QuizPage.png)
