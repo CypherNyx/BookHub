@@ -25,57 +25,38 @@ var featuredBOOK = document.getElementById("FeaturedBOOKImg");
 var googleBooksKey = "AIzaSyBSGiO1LqCBsdlWOKX20F6c1qg4EYyLWgA";
 var tmdbKey = "&api_key=1866aca8e0c0dfcbef153230d45d9a50";
 
-/*
+
 // Event listeners for Main navbar - DG
 navHomeBtn.addEventListener('click', () => {
-    if (window.location.href.endsWith('index.html')) {
-    window.location.href ='index.html';
-    } else {
-        window.location.href = '../../index.html';
-    }
-});
+        window.location.href ='index.html';
+    });
 
 navExploreBtn.addEventListener('click', () => {
-    if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/explore.html';
-    } else {
-        window.location.href ='explore.html';
-    }
-});
+     window.location.href ='explore.html';
+  });
+
 navBookshelfBtn.addEventListener('click', () => {
-    if (window.location.href.endsWith('index.html')) {
-    window.location.href ='./assets/pages/quizResults.html';
-} else {
-    window.location.href ='quizResults.html';
-}
+   window.location.href ='quizResults.html';
 });
 
 //  Explore
 navBestSellersBtn.addEventListener('click', () => {
-    
-    if (window.location.href.endsWith('index.html')) {
-        window.location.href ='./assets/pages/explore.html';
-        } else {
-            window.location.href ='explore.html';
-        }
-});
-
-
-*/
+                   window.location.href ='explore.html';
+        });
 
 
 //From here down this script only runs on Index.html
 // make quiz buttons clickable. 
-if (window.location.href.endsWith('index.html')) {
+
     startShowBtn.addEventListener('click', ()=> {
-        window.location.href ='./assets/pages/quiz.html';
+        window.location.href ='quiz.html';
         
     });
     
     //TODO: Replace link for movies quiz when / if ready
     
     startMovieBtn.addEventListener('click', ()=> {
-        window.location.href ='./assets/pages/quiz.html';
+        window.location.href ='quiz.html';
 });
 
 // Set Featured Show Image (featuredSHOW) (featuredBOOK)
@@ -117,7 +98,7 @@ var bookInfo = {
 
 showInfo.fetchInfo("tt4574334");
 bookInfo.fetchInfo("9781250147936");
-};
+
 
 
 
